@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class Vehicle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long vehicalId;
+    private Long id;
 
     @Column
     private String plateNo;
@@ -23,12 +23,12 @@ public class Vehicle {
     private String vehicaleClass;
 
 
-    public Long getVehicalId() {
-        return vehicalId;
+    public Long getId() {
+        return id;
     }
 
-    public void setVehicalId(Long vehicalId) {
-        this.vehicalId = vehicalId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getPlateNo() {
