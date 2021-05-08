@@ -1,4 +1,4 @@
-/*package com.newsampath.driving.school.service;
+package com.newsampath.driving.school.service;
 
 import com.newsampath.driving.school.dto.EmployeeDto;
 import com.newsampath.driving.school.model.Employee;
@@ -66,4 +66,3 @@ public class EmployeeService {
         return employee;
     }
 }
-*/
