@@ -2,7 +2,6 @@ package com.newsampath.driving.school.dto;
 
 import java.sql.Date;
 import java.sql.Time;
-
 public class AppoinmentsDto
 {
     private Date appoinmentDate;

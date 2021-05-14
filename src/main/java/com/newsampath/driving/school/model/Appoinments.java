@@ -3,6 +3,7 @@ package com.newsampath.driving.school.model;
 import javax.persistence.*;
 import java.sql.Date;
 import java.sql.Time;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
