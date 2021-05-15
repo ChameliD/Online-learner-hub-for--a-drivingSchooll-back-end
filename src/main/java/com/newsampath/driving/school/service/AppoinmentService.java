@@ -1,5 +1,6 @@
 package com.newsampath.driving.school.service;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.newsampath.driving.school.dto.AppoinmentsDto;
 import com.newsampath.driving.school.exceptions.AppoinmentNotFoundxception;
 import com.newsampath.driving.school.model.Appoinments;
@@ -12,6 +13,9 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
+
+
+@JsonFormat(pattern = "yyy-mm-dd hh:ss:mm" ,timezone = "GMT+5")
 
 @Service
 public class AppoinmentService {

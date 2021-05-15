@@ -1,6 +1,7 @@
 package com.newsampath.driving.school.dto;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 public class EmployeeDto {
     private long id;
@@ -11,10 +12,10 @@ public class EmployeeDto {
     private String telephoneNo;
     private String email;
     private String gender;
-    private Date birthday;
+    private LocalDate birthday;
     private String position;
     private Long salary;
-    private Date startDate;
+    private LocalDate startDate;
     private String status;
 
     public String getIdNumber() {
@@ -81,11 +82,11 @@ public class EmployeeDto {
         this.gender = gender;
     }
 
-    public Date getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
 
@@ -105,11 +106,11 @@ public class EmployeeDto {
         this.salary = salary;
     }
 
-    public Date getStartDate() {
+    public LocalDate getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
     }
 

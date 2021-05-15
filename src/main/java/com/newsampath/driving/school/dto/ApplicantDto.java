@@ -1,5 +1,8 @@
 package com.newsampath.driving.school.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.sql.Date;
 
 public class ApplicantDto {
@@ -10,6 +13,9 @@ public class ApplicantDto {
     private String address ;
     private String telephoneNo;
     private String gender;
+
+    @DateTimeFormat(pattern = "yyy-mm-dd hh:ss:mm")
+    @JsonFormat(pattern = "yyy-mm-dd ")
     private Date birthDay;
     private String licenceType;
     private Long advance ;

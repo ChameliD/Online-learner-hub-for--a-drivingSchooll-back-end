@@ -3,6 +3,7 @@ package com.newsampath.driving.school.model;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.time.LocalDate;
 
 @Entity
 @Table
@@ -26,14 +27,14 @@ public class Employee {
     @Column
     private String gender;
     @Column
-    private Date birthDay;
+    private LocalDate birthDay;
     @Column
     private String position;
     @Column
     private Long salary;
 
     @Column
-    private Date startDate;
+    private LocalDate startDate;
     @Column
     private String status;
 
@@ -93,11 +94,11 @@ public class Employee {
         this.email = email;
     }
 
-    public Date getBirthDay() {
+    public LocalDate getBirthDay() {
         return birthDay;
     }
 
-    public void setBirthDay(Date birthDay) {
+    public void setBirthDay(LocalDate birthDay) {
         this.birthDay = birthDay;
     }
 
@@ -117,11 +118,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Date getStartDate() {
+    public LocalDate getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
     }
 

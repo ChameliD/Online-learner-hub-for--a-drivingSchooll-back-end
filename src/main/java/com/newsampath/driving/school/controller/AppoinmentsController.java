@@ -1,5 +1,6 @@
 package com.newsampath.driving.school.controller;
 
+
 import com.newsampath.driving.school.dto.AppoinmentsDto;
 import com.newsampath.driving.school.service.AppoinmentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,7 @@ public class AppoinmentsController {
 
 
     @GetMapping("/all")
-    public ResponseEntity<List<AppoinmentsDto>> showAllAppoinments() {
+    public ResponseEntity<List<AppoinmentsDto>> showAllAppoinments () {
         return new ResponseEntity<>(appoinmentService.showAllAppoinments(), HttpStatus.OK);
     }
 
